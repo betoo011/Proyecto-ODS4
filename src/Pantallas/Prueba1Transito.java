@@ -16,9 +16,11 @@ public class Prueba1Transito extends javax.swing.JFrame {
     /**
      * Creates new form Prueba1Transito
      */
+
     public Prueba1Transito() {
         initComponents();
         jLabel4.setVisible(false);
+        
 
     }
 
@@ -63,6 +65,7 @@ public class Prueba1Transito extends javax.swing.JFrame {
         jButton1.setText("PARE");
         jButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(231, 76, 60)));
         jButton1.setBorderPainted(false);
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -75,6 +78,7 @@ public class Prueba1Transito extends javax.swing.JFrame {
         jButton2.setText("NO SIGA");
         jButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(243, 156, 18)));
         jButton2.setBorderPainted(false);
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -87,6 +91,7 @@ public class Prueba1Transito extends javax.swing.JFrame {
         jButton3.setText("NO ESTACIONAR");
         jButton3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(52, 152, 219)));
         jButton3.setBorderPainted(false);
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -99,6 +104,7 @@ public class Prueba1Transito extends javax.swing.JFrame {
         jButton4.setText("CEDA EL PASO");
         jButton4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(142, 68, 173)));
         jButton4.setBorderPainted(false);
+        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -187,10 +193,14 @@ public class Prueba1Transito extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+           ResumenSimulador1.sumarAcierto();
         jLabel4.setText("¡Correcto! Muy bien.");
         jLabel4.setForeground(new java.awt.Color(56, 142, 60));
         jLabel4.setVisible(true); //MUESTRA EL MENSAJE CORRESPONDIENTE
+     
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -219,6 +229,8 @@ public class Prueba1Transito extends javax.swing.JFrame {
 Prueba2Transito P2 = new  Prueba2Transito();
 P2.setVisible(true);
 this.setVisible(false);
+
+
     }//GEN-LAST:event_jButton5ActionPerformed
     private void OcultarMensaje(JLabel label, int milisegundos) {
         Timer timer = new Timer(milisegundos, e -> label.setVisible(false));
