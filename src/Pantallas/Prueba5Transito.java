@@ -198,7 +198,7 @@ RS1.setVisible(true);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        jLabel3.setText("¡Correcto! Muy bien.");
+        jLabel3.setText("¡Super Bien! Está correcto.");
                 ResumenSimulador1.sumarAcierto();
         jLabel3.setForeground(new java.awt.Color(56, 142, 60));
         jLabel3.setVisible(true);
@@ -206,7 +206,7 @@ RS1.setVisible(true);
 
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        jLabel3.setText("Intenta otra vez.");
+        jLabel3.setText("¡Casi! Vuelve a Intentarlo que vas bien.");
         jLabel3.setForeground(new java.awt.Color(211, 47, 47));
         jLabel3.setVisible(true);
         OcultarMensaje(jLabel3, 1000);
@@ -214,7 +214,7 @@ RS1.setVisible(true);
 
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        jLabel3.setText("Intenta otra vez.");
+        jLabel3.setText("¡Casi! Vuelve a Intentarlo que vas bien.");
         jLabel3.setForeground(new java.awt.Color(211, 47, 47));
         jLabel3.setVisible(true);
         OcultarMensaje(jLabel3, 1000);
@@ -222,7 +222,7 @@ RS1.setVisible(true);
 
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        jLabel3.setText("Intenta otra vez.");
+        jLabel3.setText("¡Casi! Vuelve a Intentarlo que vas bien.");
         jLabel3.setForeground(new java.awt.Color(211, 47, 47));
         jLabel3.setVisible(true);
         OcultarMensaje(jLabel3, 1000);

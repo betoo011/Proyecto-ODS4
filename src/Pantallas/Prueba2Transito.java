@@ -197,7 +197,7 @@ public class Prueba2Transito extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-      jLabel5.setText("Intenta otra vez.");
+      jLabel5.setText("¡Casi! Vuelve a Intentarlo que vas bien.");
         jLabel5.setForeground(new java.awt.Color(211, 47, 47));     
         jLabel5.setVisible(true);
          OcultarMensaje(jLabel5, 1000);
@@ -205,20 +205,20 @@ public class Prueba2Transito extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
- jLabel5.setText("¡Correcto! Muy bien.");
+ jLabel5.setText("¡Super Bien! Está correcto.");
         ResumenSimulador1.sumarAcierto();
         jLabel5.setForeground(new java.awt.Color(56, 142, 60));
         jLabel5.setVisible(true);    }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
- jLabel5.setText("Intenta otra vez.");
+ jLabel5.setText("¡Casi! Vuelve a Intentarlo que vas bien.");
         jLabel5.setForeground(new java.awt.Color(211, 47, 47));     
         jLabel5.setVisible(true);
          OcultarMensaje(jLabel5, 1000);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-       jLabel5.setText("Intenta otra vez.");
+       jLabel5.setText("¡Casi! Vuelve a Intentarlo que vas bien.");
         jLabel5.setForeground(new java.awt.Color(211, 47, 47));     
         jLabel5.setVisible(true);
          OcultarMensaje(jLabel5, 1000);
