@@ -11,17 +11,14 @@ import javax.swing.Timer;
  *
  * @author pc
  */
-public class Prueba1Transito extends javax.swing.JFrame {
+public class Prueba2Figuras extends javax.swing.JFrame {
 
     /**
-     * Creates new form Prueba1Transito
+     * Creates new form Prueba2Figuras
      */
-
-    public Prueba1Transito() {
+    public Prueba2Figuras() {
         initComponents();
-        jLabel4.setVisible(false);
-        
-
+        jLabel5.setVisible(false);
     }
 
     /**
@@ -42,7 +39,7 @@ public class Prueba1Transito extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -52,18 +49,18 @@ public class Prueba1Transito extends javax.swing.JFrame {
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setFont(new java.awt.Font("Arial Black", 0, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 121, 107));
-        jLabel1.setText("Señales de transito básicas");
+        jLabel1.setText("Figuras Geométricas");
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/SeñalPare.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/RomboFig.png"))); // NOI18N
 
         jLabel3.setFont(new java.awt.Font("Segoe Print", 1, 18)); // NOI18N
-        jLabel3.setText("Que significa esta señal de transito?");
+        jLabel3.setText("Cual esta figura geométrica?");
 
-        jButton1.setBackground(new java.awt.Color(236, 112, 99));
+        jButton1.setBackground(new java.awt.Color(248, 196, 113));
         jButton1.setFont(new java.awt.Font("Eras Bold ITC", 0, 12)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("PARE");
-        jButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(231, 76, 60)));
+        jButton1.setText("TRIÁNGULO");
+        jButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(245, 176, 65)));
         jButton1.setBorderPainted(false);
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -72,24 +69,22 @@ public class Prueba1Transito extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(245, 176, 65));
+        jButton2.setBackground(new java.awt.Color(127, 179, 213));
         jButton2.setFont(new java.awt.Font("Eras Bold ITC", 0, 12)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("NO SIGA");
-        jButton2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(243, 156, 18)));
+        jButton2.setText("CUADRADO");
         jButton2.setBorderPainted(false);
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(93, 173, 226));
+        jButton3.setBackground(new java.awt.Color(187, 143, 206));
         jButton3.setFont(new java.awt.Font("Eras Bold ITC", 0, 12)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("NO ESTACIONAR");
-        jButton3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(52, 152, 219)));
+        jButton3.setText("CIRCULO");
+        jButton3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(165, 105, 189)));
         jButton3.setBorderPainted(false);
         jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -98,11 +93,11 @@ public class Prueba1Transito extends javax.swing.JFrame {
             }
         });
 
-        jButton4.setBackground(new java.awt.Color(165, 105, 189));
+        jButton4.setBackground(new java.awt.Color(125, 206, 160));
         jButton4.setFont(new java.awt.Font("Eras Bold ITC", 0, 12)); // NOI18N
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("CEDA EL PASO");
-        jButton4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(142, 68, 173)));
+        jButton4.setText("ROMBO");
+        jButton4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(82, 190, 128)));
         jButton4.setBorderPainted(false);
         jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -124,59 +119,57 @@ public class Prueba1Transito extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("Berlin Sans FB Demi", 1, 14)); // NOI18N
-        jLabel4.setText("...");
+        jLabel5.setFont(new java.awt.Font("Berlin Sans FB Demi", 1, 14)); // NOI18N
+        jLabel5.setText("...");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(131, 131, 131)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel1)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(213, 213, 213)
-                        .addComponent(jLabel2))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(54, 54, 54)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(35, 35, 35)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(32, 32, 32)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(33, 33, 33)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(53, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(68, 68, 68)
-                .addComponent(jLabel4)
+                .addGap(29, 29, 29)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(32, 32, 32)
+                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(44, 44, 44)
+                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(56, 56, 56))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(45, 45, 45)
+                .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20))
+                .addGap(28, 28, 28))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(194, 194, 194)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel2))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(61, 61, 61)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3)
-                .addGap(35, 35, 35)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 96, Short.MAX_VALUE)
+                .addGap(51, 51, 51)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE, false)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4))
-                .addGap(20, 20, 20))
+                    .addComponent(jLabel5))
+                .addGap(19, 19, 19))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -193,50 +186,44 @@ public class Prueba1Transito extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-           ResumenSimulador1.sumarAcierto();
-        jLabel4.setText("¡Super Bien! Está correcto.");
-        jLabel4.setForeground(new java.awt.Color(56, 142, 60));
-        jLabel4.setVisible(true); //MUESTRA EL MENSAJE CORRESPONDIENTE
-     
-
+jLabel5.setText("¡Casi! Vuelve a Intentarlo que vas bien.");
+        jLabel5.setForeground(new java.awt.Color(211, 47, 47));
+        jLabel5.setVisible(true);
+                     OcultarMensaje(jLabel5, 1000);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        jLabel4.setText("¡Casi! Vuelve a Intentarlo que vas bien.");
-        jLabel4.setForeground(new java.awt.Color(211, 47, 47));
-        jLabel4.setVisible(true);
-        OcultarMensaje(jLabel4, 1000);
+    jLabel5.setText("¡Casi! Vuelve a Intentarlo que vas bien.");
+        jLabel5.setForeground(new java.awt.Color(211, 47, 47));
+        jLabel5.setVisible(true);
+                     OcultarMensaje(jLabel5, 1000);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        jLabel4.setText("¡Casi! Vuelve a Intentarlo que vas bien.");
-        jLabel4.setForeground(new java.awt.Color(211, 47, 47));
-        jLabel4.setVisible(true);
-        OcultarMensaje(jLabel4, 1000);
+jLabel5.setText("¡Casi! Vuelve a Intentarlo que vas bien.");
+        jLabel5.setForeground(new java.awt.Color(211, 47, 47));
+        jLabel5.setVisible(true);
+                     OcultarMensaje(jLabel5, 1000);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        jLabel4.setText("¡Casi! Vuelve a Intentarlo que vas bien.");
-        jLabel4.setForeground(new java.awt.Color(211, 47, 47));
-        jLabel4.setVisible(true);
-        OcultarMensaje(jLabel4, 1000);
-
+   jLabel5.setText("¡Super Bien! Está correcto.");
+        jLabel5.setForeground(new java.awt.Color(56, 142, 60));
+        jLabel5.setVisible(true); 
     }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-Prueba2Transito P2 = new  Prueba2Transito();
-P2.setVisible(true);
-this.setVisible(false);
-
-
-    }//GEN-LAST:event_jButton5ActionPerformed
     private void OcultarMensaje(JLabel label, int milisegundos) {
         Timer timer = new Timer(milisegundos, e -> label.setVisible(false));
         timer.setRepeats(false);
         timer.start();
     }
+    
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+ Prueba3Figuras F3 = new Prueba3Figuras();
+   F3.setVisible(true);
+   this.setVisible(false);
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -255,20 +242,20 @@ this.setVisible(false);
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Prueba1Transito.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Prueba2Figuras.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Prueba1Transito.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Prueba2Figuras.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Prueba1Transito.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Prueba2Figuras.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Prueba1Transito.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Prueba2Figuras.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Prueba1Transito().setVisible(true);
+                new Prueba2Figuras().setVisible(true);
             }
         });
     }
@@ -282,7 +269,7 @@ this.setVisible(false);
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
