@@ -215,7 +215,8 @@ public class Prueba1Figuras extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
- jLabel5.setText("¡Super Bien! Está correcto.");
+      ResumenSimulador1.sumarAcierto();
+        jLabel5.setText("¡Super Bien! Está correcto.");
         jLabel5.setForeground(new java.awt.Color(56, 142, 60));
         jLabel5.setVisible(true);    }//GEN-LAST:event_jButton3ActionPerformed
 
