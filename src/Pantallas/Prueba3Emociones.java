@@ -215,6 +215,7 @@ public class Prueba3Emociones extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(211, 47, 47));
         jLabel5.setVisible(true);
         OcultarMensaje(jLabel5, 1000);
+          deshabilitarBotones();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -222,6 +223,7 @@ public class Prueba3Emociones extends javax.swing.JFrame {
         jLabel5.setText("¡Super Bien! Está correcto.");
         jLabel5.setForeground(new java.awt.Color(56, 142, 60));
         jLabel5.setVisible(true);
+          deshabilitarBotones();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -229,6 +231,7 @@ public class Prueba3Emociones extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(211, 47, 47));
         jLabel5.setVisible(true);
              OcultarMensaje(jLabel5, 1000); 
+               deshabilitarBotones();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -236,6 +239,7 @@ public class Prueba3Emociones extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(211, 47, 47));
         jLabel5.setVisible(true);
              OcultarMensaje(jLabel5, 1000); 
+               deshabilitarBotones();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
@@ -247,6 +251,12 @@ private void OcultarMensaje(JLabel label, int milisegundos) {
         Timer timer = new Timer(milisegundos, e -> label.setVisible(false));
         timer.setRepeats(false);
         timer.start();
+}
+private void deshabilitarBotones() {
+    jButton1.setEnabled(false);
+    jButton2.setEnabled(false);
+    jButton3.setEnabled(false);
+    jButton4.setEnabled(false);
 }
                 
     /**

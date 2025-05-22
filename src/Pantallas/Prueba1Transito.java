@@ -199,7 +199,7 @@ public class Prueba1Transito extends javax.swing.JFrame {
         jLabel4.setText("¡Super Bien! Está correcto.");
         jLabel4.setForeground(new java.awt.Color(56, 142, 60));
         jLabel4.setVisible(true); //MUESTRA EL MENSAJE CORRESPONDIENTE
-     
+       deshabilitarBotones();
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -208,6 +208,7 @@ public class Prueba1Transito extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(211, 47, 47));
         jLabel4.setVisible(true);
         OcultarMensaje(jLabel4, 1000);
+          deshabilitarBotones();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -215,6 +216,7 @@ public class Prueba1Transito extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(211, 47, 47));
         jLabel4.setVisible(true);
         OcultarMensaje(jLabel4, 1000);
+          deshabilitarBotones();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -222,7 +224,7 @@ public class Prueba1Transito extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(211, 47, 47));
         jLabel4.setVisible(true);
         OcultarMensaje(jLabel4, 1000);
-
+  deshabilitarBotones();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
@@ -237,7 +239,12 @@ this.setVisible(false);
         timer.setRepeats(false);
         timer.start();
     }
-
+private void deshabilitarBotones() {
+    jButton1.setEnabled(false);
+    jButton2.setEnabled(false);
+    jButton3.setEnabled(false);
+    jButton4.setEnabled(false);
+}
     /**
      * @param args the command line arguments
      */

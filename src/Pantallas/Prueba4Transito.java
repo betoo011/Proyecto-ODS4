@@ -204,6 +204,7 @@ P5.setVisible(true);
         jLabel2.setForeground(new java.awt.Color(211, 47, 47));
         jLabel2.setVisible(true);
          OcultarMensaje(jLabel2,10000);
+         deshabilitarBotones();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -211,6 +212,7 @@ P5.setVisible(true);
         jLabel2.setForeground(new java.awt.Color(211, 47, 47));
         jLabel2.setVisible(true);
          OcultarMensaje(jLabel2,10000);
+         deshabilitarBotones();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -218,6 +220,7 @@ P5.setVisible(true);
                 ResumenSimulador1.sumarAcierto();
         jLabel2.setForeground(new java.awt.Color(56, 142, 60));
         jLabel2.setVisible(true);
+        deshabilitarBotones();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -225,6 +228,7 @@ P5.setVisible(true);
         jLabel2.setForeground(new java.awt.Color(211, 47, 47));
         jLabel2.setVisible(true);
         OcultarMensaje(jLabel2,10000);
+        deshabilitarBotones();
     }//GEN-LAST:event_jButton4ActionPerformed
 
      private void OcultarMensaje(JLabel label, int milisegundos) {
@@ -232,6 +236,12 @@ P5.setVisible(true);
         timer.setRepeats(false);
         timer.start();
     }
+     private void deshabilitarBotones() {
+    jButton1.setEnabled(false);
+    jButton2.setEnabled(false);
+    jButton3.setEnabled(false);
+    jButton4.setEnabled(false);
+}
     /**
      * @param args the command line arguments
      */

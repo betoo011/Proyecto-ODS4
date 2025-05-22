@@ -4,7 +4,7 @@
  */
 
 package Pantallas;
-
+import javax.sound.sampled.*;
 /**
  *
  * @author pc
@@ -15,6 +15,7 @@ public class ResumenS1 extends javax.swing.JFrame {
 
     public ResumenS1() {
         initComponents();
+        reproducirSonidoFinal();
          int totalAciertos = ResumenSimulador1.getAciertos();
     Acierto.setText("Respuestas correctas: " + totalAciertos + " / 5");
     }
@@ -147,8 +148,20 @@ PP.setVisible(true);
         this.setVisible(false);
         ResumenSimulador1.resetear();
     }//GEN-LAST:event_jButton1ActionPerformed
+public void reproducirSonidoFinal() {
+    try {
+        AudioInputStream audioStream = AudioSystem.getAudioInputStream(
+            getClass().getResource("/Sonidos/applause-small-audience-97257.wav")
+        );
 
-    /**
+        Clip clip = AudioSystem.getClip();
+        clip.open(audioStream);
+        clip.start();
+    } catch (Exception ex) {
+        ex.printStackTrace();
+    }
+}
+/**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
